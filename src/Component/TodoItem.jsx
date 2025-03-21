@@ -38,9 +38,7 @@ function TodoItem({ todo }) {
       />
       {/* Edit, Save Button */}
       <button
-        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-600 hover:scale-110 
-  active:scale-95 
-  transition-all duration-300 ease-in-out shrink-0"
+        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-600 hover:scale-110 active:scale-95 transition-all duration-300 ease-in-out shrink-0"
         onClick={() => {
           if (todo.completed) return;
 
@@ -52,7 +50,8 @@ function TodoItem({ todo }) {
       >
         {isTodoEditable ? "📁" : "✏️"}
       </button>
-      {/* Delete Todo Button */}
+
+      {/*Delete Todo Button */}
       <button
         className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center 
   bg-gray-50  hover:scale-110 

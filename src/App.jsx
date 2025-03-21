@@ -53,11 +53,9 @@ function App() {
             MANAGE TODOS:
           </h1>
           <div className="mb-4">
-            {/* Todo form goes here */}
             <TodoForm />
           </div>
           <div className="flex flex-wrap gap-y-3">
-            {/*Loop and Add TodoItem here */}
             {todos.map((todo) => (
               <div className="w-full" key={todo.id}>
                 <TodoItem todo={todo} />
